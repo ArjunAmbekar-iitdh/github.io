@@ -2,57 +2,86 @@
 <html>
 <head>
   <title>Research | Arjun Ambekar</title>
+
+  <!-- KEEP: External stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="research.html">Research</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<!-- CHANGE 1: Added container for consistent layout -->
+<div class="container">
 
-<h2>Research Interests</h2>
-<ul>
-  <li>VLSI Design and Digital Hardware Architectures</li>
-  <li>AI and Machine Learning Hardware Accelerators</li>
-  <li>Energy-Efficient and Low-Power Computing Systems</li>
-  <li>ASIC and SoC Design Methodologies</li>
-</ul>
+  <!-- CHANGE 2: Kept only ONE navigation bar (removed duplicate nav below) -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<h2>Projects</h2>
+  <!-- ===== RESEARCH INTERESTS ===== -->
+  <h2>Research Interests</h2>
 
-<b>AI-Based Crop Disease Detection System</b>
-<p>
-Developed a CNN-based system for early identification of crop diseases using image processing.
-The project focused on model training and hardware-aware AI deployment strategies.
-</p>
+  <!-- KEEP: Your interests are already well written -->
+  <ul>
+    <li>VLSI Design and Digital Hardware Architectures</li>
+    <li>AI and Machine Learning Hardware Accelerators</li>
+    <li>Energy-Efficient and Low-Power Computing Systems</li>
+    <li>ASIC and SoC Design Methodologies</li>
+  </ul>
 
-<b>Design and Analysis of CMOS Low Noise Amplifier</b>
-<p>
-Designed and analyzed a CMOS LNA using source inductive degeneration to improve noise
-performance and gain. Simulations were carried out using Cadence Virtuoso.
-</p>
+  <!-- ===== PROJECTS SECTION ===== -->
+  <!-- CHANGE 3: Wrapped projects inside a card (Template-2 style) -->
+  <div class="card">
 
-<b>Smart Street Lighting System</b>
-<p>
-Implemented an IoT-based smart street lighting system using Arduino for energy-efficient
-lighting control.
-</p>
+    <h2>Projects</h2>
 
+    <!-- Project 1 -->
+    <b>AI-Based Crop Disease Detection System</b>
+    <p>
+      Developed a CNN-based system for early identification of crop diseases
+      using image processing techniques. The project emphasized model training
+      and hardware-aware AI deployment strategies.
+    </p>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="research.html">Research</a>
-  <a href="contact.html">Contact</a>
-</nav>
+    <!-- Project 2 -->
+    <b>Design and Analysis of CMOS Low Noise Amplifier</b>
+    <p>
+      Designed and analyzed a CMOS Low Noise Amplifier using source inductive
+      degeneration to improve gain and noise performance. Simulations were
+      carried out using Cadence Virtuoso.
+    </p>
 
-<h2>Research</h2>
-<p>Content will be added soon.</p>
+    <!-- Project 3 -->
+    <b>Smart Street Lighting System</b>
+    <p>
+      Implemented an IoT-based smart street lighting system using Arduino for
+      energy-efficient and automated lighting control.
+    </p>
 
-</div>
+  </div> <!-- projects card ends -->
+
+  <!-- ===== RESEARCH PROGRESS SPREADSHEET ===== -->
+  <!-- CHANGE 4: Added Google Sheet link (Editable) -->
+  <div class="card">
+
+    <h2>Research Progress Spreadsheet</h2>
+
+    <p>
+      This spreadsheet is used to track ongoing research tasks, timelines,
+      experiments, and milestones. It can be accessed and updated by
+      collaborators.
+    </p>
+
+    <a href="https://docs.google.com/spreadsheets/d/1lNRXMBk7rMivQ-UqoXcpKtsNB9rKK5AfhYg1_zBH7mE/edit?usp=sharing"
+       target="_blank">
+       Open Research Spreadsheet
+    </a>
+
+  </div>
+
+</div> <!-- container ends -->
 
 </body>
 </html>
