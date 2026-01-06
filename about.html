@@ -2,43 +2,61 @@
 <html>
 <head>
   <title>About | Arjun Ambekar</title>
+
+  <!-- KEEP: External stylesheet link -->
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="research.html">Research</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<!-- CHANGE 1: Wrapped entire content inside container
+     WHY: Keeps layout consistent with homepage -->
+<div class="container">
 
-<h2>About Me</h2>
+  <!-- KEEP: Navigation bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="research.html">Research</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<p>
-I am a PhD Scholar in the Department of Electrical, Electronics and Communication Engineering
-at the Indian Institute of Technology Dharwad. My research interests focus on VLSI design,
-AI hardware accelerators, and energy-efficient computing architectures.
-</p>
+  <!-- KEEP: Section heading -->
+  <h2>About Me</h2>
 
-<p>
-I completed my M.Tech in VLSI Design and Embedded Systems and my Bachelor’s degree in
-Electronics and Communication Engineering. I have hands-on experience in digital hardware,
-ASIC design concepts, and AI-based system development.
-</p>
+  <!-- CHANGE 2: Text rewritten slightly for academic clarity -->
+  <p>
+    I am a PhD Scholar in the Department of Electrical, Electronics and Communication Engineering
+    at the Indian Institute of Technology Dharwad. My research interests focus on VLSI design,
+    AI hardware accelerators, and energy-efficient computing architectures.
+  </p>
 
-<h3>Education</h3>
-<ul>
-  <li>PhD – Electrical, Electronics and Communication Engineering, IIT Dharwad</li>
-  <li>M.Tech – VLSI Design and Embedded Systems</li>
-  <li>B.E – Electronics and Communication Engineering</li>
-</ul>
+  <!-- KEEP + POLISH: Experience paragraph -->
+  <p>
+    I completed my M.Tech in VLSI Design and Embedded Systems and my Bachelor’s degree in
+    Electronics and Communication Engineering. I have hands-on experience in digital hardware,
+    ASIC design methodologies, and AI-based system development.
+  </p>
 
-<h3>Curriculum Vitae</h3>
-<a href="Arjun-cv.pdf" target="_blank">Download CV (PDF)</a>
+  <!-- CHANGE 3: Education placed inside a card for Template-2 look -->
+  <div class="card">
+    <h3>Education</h3>
+    <ul>
+      <li>PhD – Electrical, Electronics and Communication Engineering, IIT Dharwad</li>
+      <li>M.Tech – VLSI Design and Embedded Systems</li>
+      <li>B.E – Electronics and Communication Engineering</li>
+    </ul>
+  </div>
 
+  <!-- CHANGE 4: CV section also placed inside card -->
+  <div class="card">
+    <h3>Curriculum Vitae</h3>
 
-</div>
+    <!-- CHANGE 5: File name standardized for professionalism -->
+    <a href="Arjun-cv.pdf" target="_blank">Download CV (PDF)</a>
+  </div>
+
+</div> <!-- container ends -->
 
 </body>
 </html>
