@@ -3,18 +3,30 @@
 <head>
   <title>Arjun Ambekar | PhD Scholar</title>
 
-  <!-- CHANGE 1: Linked external CSS properly (already correct in your code) -->
+  <!-- KEEP: External stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- CHANGE 2: Wrapped entire content inside a container
-     WHY: Keeps content centered and clean like Template 2 -->
+<!-- ===== TEMPLATE-2 HEADER (YELLOW) ===== -->
+<!-- CHANGE 1: Added header section
+     WHY: Template-2 identity comes from this header -->
+<header>
+  <img src="photo.jpg" alt="Arjun Ambekar" class="profile-pic">
+
+  <h1>Arjun Ambekar</h1>
+
+  <p class="subtitle">
+    PhD Scholar, Department of Electrical, Electronics and Communication Engineering<br>
+    Indian Institute of Technology Dharwad
+  </p>
+</header>
+
+<!-- ===== MAIN CONTENT ===== -->
 <div class="container">
 
-  <!-- CHANGE 3: Navigation kept at top (GOOD practice)
-       IMPROVEMENT: Clean academic navigation -->
+  <!-- KEEP: Navigation inside container -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
@@ -22,21 +34,7 @@
     <a href="contact.html">Contact</a>
   </nav>
 
-  <!-- CHANGE 4: Added class instead of inline style
-       WHY: CSS should be in style.css, not inline -->
-  <img src="photo.jpg" alt="Arjun Ambekar" class="profile-pic">
-
-  <!-- CHANGE 5: Heading stays same (already correct) -->
-  <h1>Arjun Ambekar</h1>
-
-  <!-- CHANGE 6: Converted description into academic subtitle -->
-  <p class="subtitle">
-    PhD Scholar, Department of Electrical, Electronics and Communication Engineering<br>
-    Indian Institute of Technology Dharwad
-  </p>
-
-  <!-- CHANGE 7: Research focus converted into CARD style section
-       WHY: This matches Template-2 layout -->
+  <!-- ===== RESEARCH FOCUS CARD ===== -->
   <div class="card">
     <h3>Research Focus</h3>
     <p>
@@ -49,4 +47,3 @@
 
 </body>
 </html>
-
