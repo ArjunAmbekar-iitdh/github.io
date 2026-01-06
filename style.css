@@ -1,28 +1,37 @@
+/* ===== GLOBAL PAGE STYLE ===== */
 body {
   font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #f4f6f8;
+
+  /* CHANGE 1: Slightly softer background for modern academic look */
+  background-color: #eef2f5;
+
   margin: 0;
 }
 
+/* ===== MAIN CONTENT CONTAINER ===== */
 .container {
-  max-width: 800px;
-  margin: auto;
+  max-width: 900px;            /* CHANGE 2: Increased width for better content breathing */
+  margin: 50px auto;           /* CHANGE 3: Cleaner centering */
   background: white;
   padding: 40px;
-  margin-top: 50px;
-  border-radius: 8px;
+  border-radius: 8px;          /* KEEP: Rounded corners look professional */
 }
 
+/* ===== HEADINGS ===== */
 h1 {
   color: #1f2933;
+  margin-top: 10px;            /* CHANGE 4: Better spacing after photo */
 }
 
+/* ===== PARAGRAPH TEXT ===== */
 p {
-  line-height: 1.6;
+  line-height: 1.7;            /* CHANGE 5: Slightly improved readability */
+  color: #333;
 }
 
+/* ===== NAVIGATION BAR ===== */
 nav {
-  margin-bottom: 30px;
+  margin-bottom: 30px;         /* KEEP: Good spacing */
 }
 
 nav a {
@@ -34,4 +43,26 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+}
+
+/* ===== PROFILE IMAGE ===== */
+.profile-pic {
+  width: 160px;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 20px;         /* CHANGE 6: Clean spacing below photo */
+}
+
+/* ===== SUBTITLE TEXT (PhD Scholar line) ===== */
+.subtitle {
+  color: #555;                 /* CHANGE 7: Softer academic tone */
+  line-height: 1.6;
+}
+
+/* ===== RESEARCH CARD (Template-2 FEATURE) ===== */
+.card {
+  margin-top: 30px;
+  background: #f9fafb;         /* CHANGE 8: Light card background */
+  padding: 25px;
+  border-radius: 8px;
 }
